@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="right hide-on-med-and-down">
+        <li><router-link to="/Login">Login</router-link></li>
+        <li><router-link :to="{ name:'Estudiantes' }">Estudiantes</router-link></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container"><router-view></router-view></div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Formulario from './components/Form.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

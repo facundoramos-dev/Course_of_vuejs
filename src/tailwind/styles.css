@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-register {
+    @apply container bg-gray-500 h-96 w-10/12 mx-auto;
+  }
+
+  .form-register form .input-register {
+    @apply w-full h-8 bg-green-300;
+  }
+
+  form {
+    @apply p-9 grid grid-rows-2;
+  }
+
+  form label {
+    @apply bg-pink-400;
+  }
+
+  form input {
+    @apply bg-green-400;
+  }
+}
