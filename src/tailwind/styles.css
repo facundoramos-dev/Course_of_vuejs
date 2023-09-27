@@ -16,7 +16,7 @@
   }
 
   form label {
-    @apply bg-pink-400;
+    @apply bg-pink-800;
   }
 
   form input {
