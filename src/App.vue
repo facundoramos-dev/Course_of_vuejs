@@ -3,7 +3,7 @@
     <div class="nav-wrapper">
       <ul class="right hide-on-med-and-down">
         <li><router-link to="/Login">Login</router-link></li>
-        <li><router-link :to="{ name:'Estudiantes' }">Estudiantes</router-link></li>
+        <li><router-link :to="{ name: 'Estudiantes' }">Estudiantes</router-link></li>
       </ul>
     </div>
   </nav>
@@ -20,3 +20,9 @@ export default {
 
 }
 </script>
+
+<style scoped>
+.nav-wrapper {
+  background-color: green;
+}
+</style>
