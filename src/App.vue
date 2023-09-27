@@ -23,6 +23,6 @@ export default {
 
 <style scoped>
 .nav-wrapper {
-  background-color: pink;
+  background-color: green;
 }
 </style>
